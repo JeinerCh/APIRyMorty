@@ -1,0 +1,131 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #1a1a2e;
+}
+
+.cartadetalle {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: rgba(40, 51, 114, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    color: white;
+}
+
+.imgdetails {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid rgb(173, 204, 62);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.masinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.nombre {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.masinfo p {
+    font-size: 18px;
+}
+
+.botton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(12, 129, 129, 0.9);
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.botton:hover {
+    background-color: rgb(76, 177, 177);
+}
+
+.mensajerror {
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 390px) {
+    .container {
+        padding: 15px;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .cartadetalle {
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .imgdetails {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        
+    }
+    .nombre {
+        font-size: 17px;
+    }
+
+    .masinfo p {
+        font-size: 15px;
+    }
+
+    .botton {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 800px) {
+    .container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .cartadetalle { 
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5px;
+        gap: 20px;
+    }
+
+    .imgdetails {
+        width: 200px;
+        height: 200px;
+    }
+
+    .masinfo {
+        width: 100%;
+        align-items: center;
+    }
+
+    .nombre {
+        font-size: 26px;
+    }
+}

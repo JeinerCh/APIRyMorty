@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    background-image: url(../../img/RyM.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 60px 40px;
+    color: white;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    font-size: 18px;
+    color: #ffffff;
+    background-color:rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(151, 206, 76, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(151, 206, 76, 0.4);
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #f3f3f3;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card ul li::before {
+    content: '▹ ';
+    color: #44b3e2;
+}
+
+.card a {
+    color: #44b3e2;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Móvil */
+@media (max-width: 390px) {
+    .about {
+        padding: 30px 15px;
+        flex-direction: column;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+
+    .titulo p {
+        font-size: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 391px) and (max-width: 800px) {
+    .about {
+        padding: 10px 25px;
+        flex-wrap: wrap;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    .cards {
+        gap: 20px;
+        width: 100%;
+
+    }
+
+    .card {
+        max-width: 400px;
+        
+    }
+}

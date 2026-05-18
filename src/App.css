@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerPage{
+    width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

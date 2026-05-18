@@ -1,0 +1,50 @@
+.home{
+  background-image: url(../../img/RyM.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid black 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   article{
+      border: solid black 5px;
+      background-color: rgba(0, 0, 0, 0.8);
+      flex-wrap: wrap;
+      color: rgb(255, 255, 255);
+      max-width: 30%;
+      border-radius: 20px;
+
+    }
+}
+
+@media (max-width: 390px) {
+    .home{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+   article{
+      max-width: 70%;
+      border-radius: 20px;
+      margin-top: 10px;
+
+    }
+}
+}
+
+@media (min-width: 391px) and (max-width: 800px) {
+   
+ .home{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+   article{
+      max-width: 70%;
+      border-radius: 20px;
+      margin-top: 10px;
+
+    }
+}
+}

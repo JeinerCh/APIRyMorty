@@ -1,0 +1,79 @@
+/* Header.css */
+header {
+    background-image: url(../../img/RyMfon2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+    text-shadow: 2px 4px black;
+    font-family: Tahoma;
+}
+
+.Imagen1 {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s;
+}
+
+.Imagen1:hover {
+    transform: scale(1.1);
+}
+
+.Imagen2 {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s;
+}
+
+.Imagen2:hover {
+    transform: scale(1.1);
+}
+
+h1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+
+@media (max-width: 390px) {
+    header {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .Imagen1, .Imagen2 {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 800px) {
+    header {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .Imagen1, .Imagen2 {
+        width: 100px;
+        height: 100px;
+    }
+}

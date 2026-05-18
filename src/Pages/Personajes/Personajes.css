@@ -1,0 +1,43 @@
+.persons {
+    background-image: url(../../img/RyM.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+    .filtro-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1px;
+      .buscar{
+        background-color:  rgb(7, 11, 87);
+        width: 30%;
+        color: aliceblue;
+
+      }
+     .selecionarFilt{
+        background-color: rgb(7, 11, 87);
+        width: 70%;
+        color: aliceblue;
+        height: 30px;
+
+     }
+     
+    }
+    .noresults{
+      color: rgb(255, 255, 255);
+      font-size: 50px;
+      text-shadow: 1px 3px  black ;
+     }
+}
+@media (max-width: 390px) {
+
+}
+
+@media (min-width: 391px) and (max-width: 800px) {
+
+}
