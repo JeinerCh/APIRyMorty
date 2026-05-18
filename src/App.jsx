@@ -25,7 +25,7 @@ function App() {
       <Header />
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/Home' element={<Home />} />
         <Route path='/Personajes' element={<Personajes />} />
         <Route path='/About' element={<About />} />
         <Route path='/characters/:id' element={<PersonajesDetails />} />

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cardcharacters.css'
+import './CardCharacters.css'
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
